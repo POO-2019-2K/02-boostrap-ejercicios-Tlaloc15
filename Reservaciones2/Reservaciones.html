@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <title>Reservaciones</title>
+</head>
+<body>
+    <div class="jumbotron">
+    <h1>Reservaciones</h1>
+    <p>Registro de Reservaciones</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                        <form class="col-12">
+                                <div class="form-group">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Vianey Garcia"/>
+                                </div>
+                                <div class="form-group">
+                                        <label for="telefono">Telefono</label>
+                                        <input type="text" class="form-control" id="telefono" placeholder="3124567890"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="text" class="form-control" id="email" placeholder="@ucol.mx"/>
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="cuarto">Numero de cuarto</label>
+                                            <input type="text" class="form-control" id="Ncuarto" placeholder="160"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="llegada">Fecha de llegada</label>
+                                            <input type="date" class="form-control" id="llegada" placeholder="Dia de llegada"/>
+                                        </div>
+                                        <button type="button" id="btnAdd" class="btn btn-primary">Agregar</button>
+                            </form>
+                </div>
+            </div>
+        </div>
+                <div class="row my-4">
+                    <table id="info" class="table" ml-2>
+                        <tbody>
+                            <tr>
+                                <td>Reservaciones:</td>
+                                <td id="numReservaciones"></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            <div class="col-md-12">
+                <table id="reservaciones" class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                            <th>Tipo de cuarto</th>
+                            <th>Fecha de llegada</th>
+                            <th>Dias restantes</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+    </div>
+    </div>
+
+    <script src="./main.js" type="module"></script>
+
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

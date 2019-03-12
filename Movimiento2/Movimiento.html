@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuenta bancaria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <link rel="stylesheet" href="schedule.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+        <div class="jumbotron">
+                <h1 class="display-4">Cuenta bancaria</h1>
+                <p class="lead">Plataforma para hacer movimientos bancarios</p>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="form">
+                        <form action="">
+                                <div class="form-group">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Eduardo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Apellido:</label>
+                                    <input type="text" class="form-control" id="apellido" placeholder="García">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">No.Cuenta:</label>
+                                    <input type="text" class="form-control" id="nCuenta" placeholder="123493">
+                                </div>
+                                <br>
+                                <select id="select" class="form-control" style="width: 285px;">
+                                        <option>Seleccione el tipo de movimiento</option>
+                                        <option value="1">Deposito</option>
+                                        <option value="2">Retiro</option>
+                                      </select>
+                                      <br>
+                                      <div class="form-group">
+                                        <label for="name">Cantidad:</label>
+                                        <input type="text" class="form-control" id="cantidad" placeholder="$">
+                                    </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-outline-primary" id="btn1">Ejecutar</button>
+                                </div>
+                            </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <table class="table" id="info">
+                        <thead>
+                            <th>Indicador</th>
+                            <th>Valor</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Deposito bancario</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                    <td>Total deposito bancario</td>
+                                    <td></td>
+                            </tr>
+                            <tr>
+                                    <td>Retiro bancario</td>
+                                    <td></td>
+                            </tr>
+                            <tr>
+                                    <td>Total retiro bancario</td>
+                                    <td></td>
+                            </tr>
+                            <tr>
+                                    <td>Movimientos bancarios</td>
+                                    <td></td>
+                            </tr>
+                            <tr>
+                                    <td>Balance total</td>
+                                    <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <table class="table" id="list">
+                        <thead>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>No.Cuenta</th>
+                            <th>Movimiento</th>
+                            <th>Cantidad</th>
+                            <th>Balance</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+</body>
+<script src="main.js" type="module"></script>
+</html>
